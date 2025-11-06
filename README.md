@@ -15,4 +15,3 @@ This app extracts structured information from documents (like PAN Card forms) us
 - Google Gemini API
 - Tesseract OCR
 - pdf2image
-  
