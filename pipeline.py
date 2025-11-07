@@ -3,6 +3,9 @@ from pdf2image import convert_from_path
 import google.generativeai as genai
 import os, json
 
+# Explicitly tell pytesseract where Tesseract is installed in Docker
+pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
+
 # Configure Gemini
 api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
